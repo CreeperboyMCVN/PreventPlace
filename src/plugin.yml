@@ -1,0 +1,12 @@
+name: PreventPlace
+version: 1.1
+main: com.CreeperboyMCVN.preventplace.PreventPlace
+api-version: 1.15
+author: [CreeperboyMCVN,LightMax_Vn]
+commands:
+  preventplace:
+    description: reload the plugin
+    permission: preventplace.reload
+permissions:
+  preventplace.reload:
+    description: Allows player reload plugin
