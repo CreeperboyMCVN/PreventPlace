@@ -48,17 +48,8 @@ EnablePreventStore: true
 #Tin nhắn khi ai đó cố đặt item vào rương
 StoreErr: '&cĐáng tiếc là bạn không thể đặt dụng cụ vào rương (vật chứa đồ).'
 
-#Bật/tắt chức năng dùng số để chuyển đồ
-#do chức năng cấm chuyển item vẫn đang phát triển nên hãy để giá trị này là false
-#nếu không sẽ gây bug
-#nếu bạn vẫn muốn bật thì hãy tắt chức năng cấm chuyển đồ đi (EnablePreventStore: false)
-EnableNumberClickType: false
-
-#Ai đó dùng số để chuyển túi đồ
-NumberClickMessage: '&cChức năng dùng số để lưu trữ đồ hiện đang vô hiệu hóa'
-
-#1 lời cảnh báo nho nhỏ
-UseNumberClickTypeWarning: '&a&lPreventPlace&c&l >&4 Hiện tại máy chủ bạn đang bật chức năng dùng số để lưu trữ đồ khi bật tính năng Cấm lưu trữ item. Vui lòng chỉnh ''EnableNumberClickType'' hoặc ''EnablePreventStore'' thành false để tránh gây bug cho máy chủ bạn!'
+#Bật tính năng cấm bỏ item chỉ định
+EnableBlacklistItem: true
 
 #Item cấm bỏ vào rương
 BlacklistedItem:
@@ -68,6 +59,11 @@ BlacklistedItem:
     - 'IRON_SWORD'
     - 'GOLDEN_SWORD'
 #Xem thêm ở https://helpch.at/docs/1.15.2/org/bukkit/Material.html
+
+#Update 1.3
+#Bật tính năng cấm bỏ item có tên tùy chỉnh vào rương
+EnableStoreCustomName: true
+
     
 ##############################################################################
 #+--------------------------------------------------------------------------+#
@@ -79,4 +75,4 @@ BlacklistedItem:
 #ehh chắc mấy bạn cũng bít chỗ này để update config thui
 #sửa coi chừng lỗi
 
-config-version: 1
+config-version: 2
