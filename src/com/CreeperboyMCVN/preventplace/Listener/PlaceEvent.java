@@ -6,6 +6,7 @@
 package com.CreeperboyMCVN.preventplace.Listener;
 
 import com.CreeperboyMCVN.preventplace.PreventPlace;
+import java.util.List;
 import java.util.Objects;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -37,6 +38,10 @@ public class PlaceEvent implements Listener {
       
       if (!plugin.getConfig().getBoolean("EnablePreventPlace")) return;
       if (player.hasPermission("preventplace.bypass")) return;
+      List<String> itemList = plugin.getConfig().getStringList("PlaceWhitelistItem");
+      for (String s: itemList) {
+          if (check.getType().toString().equalsIgnoreCase(s)) return;
+      }
 
       if (!checkmeta.hasDisplayName()) return;
       if (checkmeta.hasDisplayName()) {

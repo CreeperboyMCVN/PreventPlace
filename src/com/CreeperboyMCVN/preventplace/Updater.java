@@ -20,7 +20,7 @@ public class Updater {
     
     public void check() {
         int version = plugin.getConfig().getInt("config-version", 0);
-        if ((version == 0)||(version < 2)) {
+        if ((version == 0)||(version < 3)) {
             File f = new File(plugin.getDataFolder() + File.separator, "config.yml");
             if (!f.exists()) {
                 plugin.getLogger().info("Đang tạo tệp config.yml mới...");

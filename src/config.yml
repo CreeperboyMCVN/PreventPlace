@@ -36,6 +36,10 @@ EnablePreventPlace: true
 #TIn nhắn khi ai đó cố đặt item
 PlaceError: '&cBạn không thể đặt vật phẩm có tên tùy chỉnh!'
 
+#Các vật phẩm sẽ không được kiểm tra
+PlaceWhitelistItem: 
+    - MOB_SPAWNER
+
 ##############################################################################
 #+--------------------------------------------------------------------------+#
 #|                             Cấm lưu trữ item                             |#
@@ -64,6 +68,11 @@ BlacklistedItem:
 #Bật tính năng cấm bỏ item có tên tùy chỉnh vào rương
 EnableStoreCustomName: true
 
+#Update 1.4
+#Các tên inventory mà plugin sẽ bỏ qua
+BypassInventoryName:
+    - "§"
+
     
 ##############################################################################
 #+--------------------------------------------------------------------------+#
@@ -75,4 +84,4 @@ EnableStoreCustomName: true
 #ehh chắc mấy bạn cũng bít chỗ này để update config thui
 #sửa coi chừng lỗi
 
-config-version: 2
+config-version: 3
